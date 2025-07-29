@@ -1,0 +1,13 @@
+target_img,probe_img,cue_text,is_match
+stimuli/zèbre.png,stimuli/violon.png,Qu'est-ce qui vient ensuite ?,match
+stimuli/ciseau.png,stimuli/banane.png,Qu'est-ce qui vient ensuite ?,non-match
+stimuli/zèbre.png,stimuli/face.png,Qu'est-ce qui vient ensuite ?,non-match
+stimuli/face.png,stimuli/zèbre.png,Qu'est-ce qui vient ensuite ?,match
+stimuli/violon.png,stimuli/face.png,Qu'est-ce qui vient ensuite ?,match
+stimuli/lunette.png,stimuli/ciseau.png,Qu'est-ce qui vient ensuite ?,non-match
+stimuli/banane.png,stimuli/lunette.png,Qu'est-ce qui vient ensuite ?,non-match
+stimuli/face.png,stimuli/violon.png,Qu'est-ce qui vient ensuite ?,non-match
+stimuli/violon.png,stimuli/zèbre.png,Qu'est-ce qui vient ensuite ?,non-match
+stimuli/banane.png,stimuli/ciseau.png,Qu'est-ce qui vient ensuite ?,match
+stimuli/lunette.png,stimuli/banane.png,Qu'est-ce qui vient ensuite ?,match
+stimuli/ciseau.png,stimuli/lunette.png,Qu'est-ce qui vient ensuite ?,match
