@@ -1,0 +1,7 @@
+pair_name,stim1_img,stim2_img
+A_B,stimuli/zèbre.png,stimuli/violon.png
+B_C,stimuli/violon.png,stimuli/banane.png
+C_A,stimuli/banane.png,stimuli/zèbre.png
+1_2,stimuli/face.png,stimuli/lunette.png
+2_3,stimuli/lunette.png,stimuli/ciseau.png
+3_1,stimuli/ciseau.png,stimuli/face.png
