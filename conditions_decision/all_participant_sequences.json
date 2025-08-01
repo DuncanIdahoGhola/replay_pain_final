@@ -1,0 +1,1190 @@
+{
+    "1": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png",
+            "stimuli/face.png"
+        ]
+    },
+    "2": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/face.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "3": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/face.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "4": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/violon.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "5": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/banane.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/face.png",
+            "stimuli/violon.png"
+        ]
+    },
+    "6": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/violon.png",
+            "stimuli/banane.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/face.png"
+        ]
+    },
+    "7": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/lunette.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/violon.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "8": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/violon.png",
+            "stimuli/z\u00e8bre.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/face.png",
+            "stimuli/lunette.png"
+        ]
+    },
+    "9": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/banane.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/face.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "10": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/ciseau.png",
+            "stimuli/banane.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/lunette.png",
+            "stimuli/face.png"
+        ]
+    },
+    "11": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/violon.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/face.png",
+            "stimuli/lunette.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "12": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png",
+            "stimuli/banane.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png",
+            "stimuli/face.png"
+        ]
+    },
+    "13": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/face.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "14": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/ciseau.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/face.png",
+            "stimuli/lunette.png"
+        ]
+    },
+    "15": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/violon.png",
+            "stimuli/z\u00e8bre.png"
+        ],
+        "sequence_2": [
+            "stimuli/face.png",
+            "stimuli/banane.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "16": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/face.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "17": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/banane.png",
+            "stimuli/face.png"
+        ]
+    },
+    "18": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/banane.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/lunette.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "19": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/violon.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "20": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/banane.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/face.png",
+            "stimuli/violon.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "21": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/face.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "22": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/face.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/banane.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "23": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/face.png",
+            "stimuli/z\u00e8bre.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/violon.png",
+            "stimuli/lunette.png"
+        ]
+    },
+    "24": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/face.png",
+            "stimuli/banane.png",
+            "stimuli/lunette.png"
+        ]
+    },
+    "25": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png",
+            "stimuli/face.png"
+        ]
+    },
+    "26": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/banane.png",
+            "stimuli/z\u00e8bre.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/ciseau.png",
+            "stimuli/face.png"
+        ]
+    },
+    "27": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png",
+            "stimuli/banane.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png",
+            "stimuli/face.png"
+        ]
+    },
+    "28": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/banane.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "29": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/banane.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/face.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/lunette.png"
+        ]
+    },
+    "30": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/face.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/violon.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "31": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/violon.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/ciseau.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "32": {
+        "sequence_1": [
+            "stimuli/face.png",
+            "stimuli/banane.png",
+            "stimuli/z\u00e8bre.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/violon.png",
+            "stimuli/lunette.png"
+        ]
+    },
+    "33": {
+        "sequence_1": [
+            "stimuli/face.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/banane.png",
+            "stimuli/violon.png"
+        ]
+    },
+    "34": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/face.png",
+            "stimuli/ciseau.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "35": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/face.png",
+            "stimuli/banane.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "36": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/violon.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "37": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/lunette.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "38": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/violon.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/ciseau.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "39": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/face.png",
+            "stimuli/violon.png"
+        ]
+    },
+    "40": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/face.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "41": {
+        "sequence_1": [
+            "stimuli/face.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/violon.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "42": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/face.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "43": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/face.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "44": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/face.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/lunette.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "45": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/banane.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "46": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/banane.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "47": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/banane.png",
+            "stimuli/z\u00e8bre.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/violon.png",
+            "stimuli/face.png"
+        ]
+    },
+    "48": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png"
+        ]
+    },
+    "49": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/ciseau.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/face.png",
+            "stimuli/lunette.png"
+        ]
+    },
+    "50": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/face.png",
+            "stimuli/violon.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "51": {
+        "sequence_1": [
+            "stimuli/face.png",
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/violon.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "52": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/face.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "53": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/face.png"
+        ]
+    },
+    "54": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/banane.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "55": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png"
+        ]
+    },
+    "56": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/lunette.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/ciseau.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "57": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png",
+            "stimuli/banane.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/face.png",
+            "stimuli/violon.png"
+        ]
+    },
+    "58": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/ciseau.png",
+            "stimuli/banane.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/lunette.png",
+            "stimuli/face.png"
+        ]
+    },
+    "59": {
+        "sequence_1": [
+            "stimuli/face.png",
+            "stimuli/banane.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "60": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/face.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png"
+        ]
+    },
+    "61": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/face.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "62": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/banane.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png",
+            "stimuli/face.png"
+        ]
+    },
+    "63": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/violon.png",
+            "stimuli/banane.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/face.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "64": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/face.png",
+            "stimuli/banane.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "65": {
+        "sequence_1": [
+            "stimuli/face.png",
+            "stimuli/violon.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/banane.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "66": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/violon.png",
+            "stimuli/z\u00e8bre.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png",
+            "stimuli/face.png"
+        ]
+    },
+    "67": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/face.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "68": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/face.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "69": {
+        "sequence_1": [
+            "stimuli/face.png",
+            "stimuli/violon.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "70": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/banane.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png",
+            "stimuli/face.png"
+        ]
+    },
+    "71": {
+        "sequence_1": [
+            "stimuli/face.png",
+            "stimuli/lunette.png",
+            "stimuli/banane.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/ciseau.png",
+            "stimuli/violon.png"
+        ]
+    },
+    "72": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/banane.png",
+            "stimuli/z\u00e8bre.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png",
+            "stimuli/face.png"
+        ]
+    },
+    "73": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/ciseau.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/violon.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "74": {
+        "sequence_1": [
+            "stimuli/face.png",
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png"
+        ]
+    },
+    "75": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/face.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "76": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/face.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png",
+            "stimuli/lunette.png"
+        ]
+    },
+    "77": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png",
+            "stimuli/banane.png"
+        ],
+        "sequence_2": [
+            "stimuli/face.png",
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "78": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/violon.png"
+        ]
+    },
+    "79": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/lunette.png",
+            "stimuli/z\u00e8bre.png"
+        ],
+        "sequence_2": [
+            "stimuli/face.png",
+            "stimuli/banane.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "80": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/face.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "81": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/ciseau.png",
+            "stimuli/z\u00e8bre.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/banane.png",
+            "stimuli/face.png"
+        ]
+    },
+    "82": {
+        "sequence_1": [
+            "stimuli/face.png",
+            "stimuli/banane.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "83": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/banane.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/face.png",
+            "stimuli/ciseau.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "84": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/face.png",
+            "stimuli/banane.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/lunette.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "85": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/violon.png",
+            "stimuli/z\u00e8bre.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png",
+            "stimuli/face.png"
+        ]
+    },
+    "86": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/face.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/lunette.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "87": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/banane.png",
+            "stimuli/face.png"
+        ]
+    },
+    "88": {
+        "sequence_1": [
+            "stimuli/banane.png",
+            "stimuli/face.png",
+            "stimuli/z\u00e8bre.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png",
+            "stimuli/violon.png"
+        ]
+    },
+    "89": {
+        "sequence_1": [
+            "stimuli/lunette.png",
+            "stimuli/face.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/ciseau.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "90": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/banane.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/lunette.png",
+            "stimuli/face.png"
+        ]
+    },
+    "91": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/face.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/banane.png",
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "92": {
+        "sequence_1": [
+            "stimuli/face.png",
+            "stimuli/z\u00e8bre.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/lunette.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "93": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/banane.png",
+            "stimuli/face.png"
+        ],
+        "sequence_2": [
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png",
+            "stimuli/violon.png"
+        ]
+    },
+    "94": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/face.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/banane.png",
+            "stimuli/lunette.png"
+        ]
+    },
+    "95": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/ciseau.png",
+            "stimuli/z\u00e8bre.png"
+        ],
+        "sequence_2": [
+            "stimuli/face.png",
+            "stimuli/lunette.png",
+            "stimuli/banane.png"
+        ]
+    },
+    "96": {
+        "sequence_1": [
+            "stimuli/ciseau.png",
+            "stimuli/lunette.png",
+            "stimuli/violon.png"
+        ],
+        "sequence_2": [
+            "stimuli/face.png",
+            "stimuli/banane.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    },
+    "97": {
+        "sequence_1": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/banane.png",
+            "stimuli/ciseau.png"
+        ],
+        "sequence_2": [
+            "stimuli/violon.png",
+            "stimuli/face.png",
+            "stimuli/lunette.png"
+        ]
+    },
+    "98": {
+        "sequence_1": [
+            "stimuli/violon.png",
+            "stimuli/lunette.png",
+            "stimuli/banane.png"
+        ],
+        "sequence_2": [
+            "stimuli/z\u00e8bre.png",
+            "stimuli/face.png",
+            "stimuli/ciseau.png"
+        ]
+    },
+    "99": {
+        "sequence_1": [
+            "stimuli/face.png",
+            "stimuli/violon.png",
+            "stimuli/banane.png"
+        ],
+        "sequence_2": [
+            "stimuli/lunette.png",
+            "stimuli/ciseau.png",
+            "stimuli/z\u00e8bre.png"
+        ]
+    }
+}
