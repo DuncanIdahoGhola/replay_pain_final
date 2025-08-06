@@ -8,7 +8,7 @@
     <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
     <Param val="Thank you for your patience." valType="str" updates="None" name="End Message"/>
-    <Param val="{'participant': 'sub-000'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="{'participant': 'sub-000', 'calibration_low': '0', 'calibration_high': '0'}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
     <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
@@ -81,6 +81,22 @@
   </Settings>
   <Routines>
     <Routine name="setp_up">
+      <RoutineSettingsComponent name="setp_up" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="setp_up" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
       <CodeComponent name="start_up" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
@@ -115,22 +131,6 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="init_eeg" valType="code" updates="None" name="name"/>
       </CodeComponent>
-      <RoutineSettingsComponent name="setp_up" plugin="None">
-        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
-        <Param val="" valType="str" updates="None" name="backgroundImg"/>
-        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
-        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
-        <Param val="" valType="str" updates="constant" name="desc"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
-        <Param val="setp_up" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="constant" name="skipIf"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
-      </RoutineSettingsComponent>
       <TextComponent name="instructions_text" plugin="None">
         <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -178,6 +178,23 @@
         <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
+      <CodeComponent name="ds8r_code" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="import ds8r&amp;#10;import serial&amp;#10;import time&amp;#10;def set_ds8r_intensity(dgt, dgc, intensity_mA):&amp;#10;    dgc['demand'] = int(float(intensity_mA) * 10) &amp;#10;    dgc['enabled'] = 1&amp;#10;    dgc['pulsewidth'] = 2000 &amp;#10;    ds8r.set_d128(dgt, dgc)&amp;#10;dgt, dgc = ds8r.init()&amp;#10;adress = 'COM9'&amp;#10;def init_port(adress):&amp;#10;    port = serial.Serial(adress, baudrate=9600)&amp;#10;    time.sleep(1) # Wait to make sure it's open&amp;#10;    return port&amp;#10;port = init_port(address)&amp;#10;port.write([0x00])&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;#use values for low and high pain&amp;#10;low_pain_mA = float(expInfo['calibration_low'])&amp;#10;high_pain_mA = float(expInfo['calibration_high'])&amp;#10;no_pain_mA = 0" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="import * as ds8r from 'ds8r';&amp;#10;import * as serial from 'serial';&amp;#10;import * as time from 'time';&amp;#10;function set_ds8r_intensity(dgt, dgc, intensity_mA) {&amp;#10;    dgc[&quot;demand&quot;] = Number.parseInt((Number.parseFloat(intensity_mA) * 10));&amp;#10;    dgc[&quot;enabled&quot;] = 1;&amp;#10;    dgc[&quot;pulsewidth&quot;] = 2000;&amp;#10;    ds8r.set_d128(dgt, dgc);&amp;#10;}&amp;#10;[dgt, dgc] = ds8r.init();&amp;#10;adress = &quot;COM9&quot;;&amp;#10;function init_port(adress) {&amp;#10;    port = new serial.Serial(adress, {&quot;baudrate&quot;: 9600});&amp;#10;    time.sleep(1);&amp;#10;    return port;&amp;#10;}&amp;#10;port = init_port(address);&amp;#10;port.write([0]);&amp;#10;low_pain_mA = Number.parseFloat(expInfo[&quot;calibration_low&quot;]);&amp;#10;high_pain_mA = Number.parseFloat(expInfo[&quot;calibration_high&quot;]);&amp;#10;no_pain_mA = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="ds8r_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="eeg_start">
       <RoutineSettingsComponent name="eeg_start" plugin="None">
@@ -321,7 +338,7 @@
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="first key" valType="str" updates="constant" name="store"/>
         <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
@@ -359,22 +376,22 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="photo_sensor" valType="code" updates="None" name="name"/>
       </CodeComponent>
-      <CodeComponent name="choice_code" plugin="None">
+      <CodeComponent name="path_choice_2" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="resp_choice = `veuillez utiliser $allowed_keys_list pour choisir la première ou la deuxième séquence`;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="#add information for planning here&amp;#10;&amp;#10;resp_choice = f'veuillez utiliser $allowed_keys_list pour choisir la première ou la deuxième séquence'" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="import * as random from 'random';&amp;#10;frame_check = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="import random&amp;#10;&amp;#10;frame_check = 0 " valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="first_key = path_choice.keys[0]&amp;#10;&amp;#10;if first_key == allowed_keys_list[0] and frame_check == 0:&amp;#10;    path = path_1_images&amp;#10;    chosen_path = path_1&amp;#10;    pain_intensity = path1_final_pain&amp;#10;    frame_check = 1&amp;#10;elif first_key == allowed_keys_list[1] and frame_check == 0:&amp;#10;    path = path_2_images&amp;#10;    pain_intensity = path2_final_pain&amp;#10;    chosen_path = path_2&amp;#10;    frame_check = 1&amp;#10;else :&amp;#10;    path = random.choice([path_1_images, path_2_images])&amp;#10;    chosen_path = path_2&amp;#10;    frame_check = 1" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="first_key = path_choice.keys[0];&amp;#10;if (((first_key === allowed_keys_list[0]) &amp;&amp; (frame_check === 0))) {&amp;#10;    path = path_1_images;&amp;#10;    chosen_path = path_1;&amp;#10;    pain_intensity = path1_final_pain;&amp;#10;    frame_check = 1;&amp;#10;} else {&amp;#10;    if (((first_key === allowed_keys_list[1]) &amp;&amp; (frame_check === 0))) {&amp;#10;        path = path_2_images;&amp;#10;        pain_intensity = path2_final_pain;&amp;#10;        chosen_path = path_2;&amp;#10;        frame_check = 1;&amp;#10;    } else {&amp;#10;        path = Math.random.choice([path_1_images, path_2_images]);&amp;#10;        chosen_path = path_2;&amp;#10;        frame_check = 1;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="psychoJS.experiment.addData(&quot;chosen_path&quot;, chosen_path);&amp;#10;psychoJS.experiment.addData(&quot;pain_given&quot;, pain_intensity);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="thisExp.addData('chosen_path', chosen_path)&amp;#10;thisExp.addData('pain_given', pain_intensity)" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="choice_code" valType="code" updates="None" name="name"/>
+        <Param val="path_choice_2" valType="code" updates="None" name="name"/>
       </CodeComponent>
     </Routine>
     <Routine name="stim_loader">
@@ -451,6 +468,23 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="eeg_trigger_fix" valType="code" updates="None" name="name"/>
       </CodeComponent>
+      <CodeComponent name="choice_code_2" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="resp_choice = `veuillez utiliser $allowed_keys_list pour choisir la première ou la deuxième séquence`;&amp;#10;path_1_images = [path1_start_stim, path1_middle_stim, path1_end_stim];&amp;#10;path_2_imges = [path2_start_stim, path2_middle_stim, path2_end_stim];&amp;#10;if ((rule_change_info === &quot;no&quot;)) {&amp;#10;    rule_change = &quot;Aucun changement de r\u00e8gle&quot;;&amp;#10;} else {&amp;#10;    if ((rule_change_info === &quot;yes&quot;)) {&amp;#10;        rule_change = &quot;Haute devient aucune, aucune devient basse, basse devient haute&quot;;&amp;#10;    }&amp;#10;}&amp;#10;path_1_start = path1_start_stim.split(&quot;/&quot;).slice((- 1))[0].split(&quot;.&quot;)[0];&amp;#10;path_1_start = path2_start_stim.split(&quot;/&quot;).slice((- 1))[0].split(&quot;.&quot;)[0];&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="#add information for planning here&amp;#10;&amp;#10;resp_choice = f'veuillez utiliser $allowed_keys_list pour choisir la première ou la deuxième séquence'&amp;#10;&amp;#10;#we will make paths and images be linked here&amp;#10;&amp;#10;path_1_images = [path1_start_stim, path1_middle_stim, path1_end_stim]&amp;#10;&amp;#10;path_2_imges = [path2_start_stim, path2_middle_stim, path2_end_stim]&amp;#10;#We can now show images linked to the path that is chosen&amp;#10;&amp;#10;#we need to give information to participant about rule change&amp;#10;if rule_change_info == 'no':&amp;#10;    rule_change = 'Aucun changement de règle'&amp;#10;elif rule_change_info == 'yes':&amp;#10;    rule_change = 'Haute devient aucune, aucune devient basse, basse devient haute'&amp;#10;&amp;#10;&amp;#10;#here we will set up dynamically the names of our first stimuli in the sequence &amp;#10;path_1_start = path1_start_stim.split('/')[-1].split('.')[0]&amp;#10;path_1_start = path2_start_stim.split('/')[-1].split('.')[0]&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="choice_code_2" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="sequence_showing">
       <RoutineSettingsComponent name="sequence_showing" plugin="None">
@@ -479,7 +513,7 @@
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="$image_1" valType="file" updates="set during: stim_loader.load_images" name="image"/>
+        <Param val="$path[0]" valType="file" updates="set during: stim_loader.load_images" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
         <Param val="sequence_image_1" valType="code" updates="None" name="name"/>
@@ -508,7 +542,7 @@
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="$image_2" valType="file" updates="set during: stim_loader.load_images" name="image"/>
+        <Param val="$path[1]" valType="file" updates="set during: stim_loader.load_images" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
         <Param val="sequence_image_2" valType="code" updates="None" name="name"/>
@@ -537,7 +571,7 @@
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="$image_3" valType="file" updates="set during: stim_loader.load_images" name="image"/>
+        <Param val="$path[2]" valType="file" updates="set during: stim_loader.load_images" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
         <Param val="sequence_image_3" valType="code" updates="None" name="name"/>
@@ -561,15 +595,15 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="#add pain stim linked to sequence_image_3" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="wait_shock = 0;&amp;#10;if ((pain_intensity === &quot;Low&quot;)) {&amp;#10;    set_ds8r_intensity(dgt, dgc, low_pain_mA);&amp;#10;} else {&amp;#10;    if ((pain_intensity === &quot;High&quot;)) {&amp;#10;        set_ds8r_intensity(dgt, dgc, high_pain_mA);&amp;#10;    } else {&amp;#10;        if ((pain_intensity === &quot;None&quot;)) {&amp;#10;            set_ds8r_intensity(dgt, dgc, no_pain_mA);&amp;#10;        } else {&amp;#10;            console.log(&quot;problem, no pain intensity&quot;);&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="wait_shock = 0&amp;#10;&amp;#10;if pain_intensity == 'Low' :&amp;#10;    set_ds8r_intensity(dgt, dgc, low_pain_mA)&amp;#10;elif pain_intensity == 'High': &amp;#10;    set_ds8r_intensity(dgt, dgc, high_pain_mA)&amp;#10;elif pain_intensity == 'None':&amp;#10;    set_ds8r_intensity(dgt, dgc, no_pain_mA)&amp;#10;else : &amp;#10;    print('problem, no pain intensity')&amp;#10;    " valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="if trigger_shock.status == started and wait_shock == 0: &amp;#10;    port.write(bytes[0x02])&amp;#10;    #Fermer le port &amp;#10;    port.write(bytes[0x00])&amp;#10;    wait_shock = 1&amp;#10;    &amp;#10;    &amp;#10;#port.write([0x02]) or port.write(bytes([0x02]))" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="if (((trigger_shock.status === started) &amp;&amp; (wait_shock === 0))) {&amp;#10;    port.write(bytes[2]);&amp;#10;    port.write(bytes[0]);&amp;#10;    wait_shock = 1;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="psychoJS.experiment.addData(&quot;stim_intensity_mA&quot;, actual_value_used);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="thisExp.addData('stim_intensity_mA', actual_value_used)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="pain_stim" valType="code" updates="None" name="name"/>
       </CodeComponent>
@@ -590,6 +624,33 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="eeg_trigger_stimulis" valType="code" updates="None" name="name"/>
       </CodeComponent>
+      <TextComponent name="trigger_shock" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="trigger_shock" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="3" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
     </Routine>
     <Routine name="replay_break">
       <RoutineSettingsComponent name="replay_break" plugin="None">
